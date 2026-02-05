@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TaskVerse</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- VIDEO BACKGROUND -->
+<video autoplay muted loop id="bgVideo">
+    <source src="https://cdn.coverr.co/videos/coverr-purple-smoke-abstract-5620/1080p.mp4" type="video/mp4">
+</video>
+
+<div class="overlay"></div>
+
+<div class="container">
+    <h1>🚀 TaskVerse</h1>
+
+    <form id="taskForm" class="glass fade-in">
+        <input id="title" placeholder="Task title" />
+        <textarea id="description" placeholder="Task description"></textarea>
+
+        <select id="priority">
+            <option value="">Select priority</option>
+            <option>LOW</option>
+            <option>MEDIUM</option>
+            <option>HIGH</option>
+        </select>
+
+        <button type="submit">Create Task</button>
+        <p id="error" class="error"></p>
+    </form>
+
+    <div id="tasks" class="fade-in"></div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
